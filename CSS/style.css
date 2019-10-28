@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(114, 177, 156);
+    padding:0;
+    margin:0;
+}
+
+#contenedor{
+    display: grid;
+    width:100%;
+    margin:none;
+    grid-template-columns: 20% 10px 1fr;
+    grid-template-rows: auto auto auto auto;
+    background-color: #2196F3;
+    padding: 1px;
+    grid-template-areas: "header header header"
+                          "menu . articulo1"
+                          "menu . formulario"
+                          "footer footer footer";
+}
+
+#cabecera{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 1%;
+    color: rgb(74, 93, 201);
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    grid-area: header;
+    background-image:url("../img/header.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-size: 30px;
+    text-align: right;
+    margin:2px;
+    border:1px solid black;
+}
+#menu{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 2%;
+    grid-area:menu;
+    font-size: 30px;
+    text-align: center;
+    margin:5px;
+    border:1px solid black;
+}
+#listamenu{
+    list-style-type: none;
+    display:inline;
+
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    display:block;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    margin-top:5px;
+    background-color: #2175bc;
+    color: #fff;
+}
+#article1{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 6%;
+    grid-area: articulo1;
+    font-size: 15px;
+    margin:5px;
+    text-align: justify;
+    border:1px solid black;
+}
+#gotyimg{
+    width: 50%;
+}
+footer{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 2%;
+    grid-area: footer;
+    margin:5px;
+    font-size: 10px;
+    text-align: center;
+    border:1px solid black;
+}
+#formulario{
+    background-color: rgba(255, 255, 255, 0.8);
+    grid-area:formulario;
+    margin:5px;
+    border: 1px solid black;
+    padding-right:10%;
+    padding-left: 3%;
+    padding-top:1%;
+    padding-bottom: 1%;
+}
+.inp{
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 2%;
+    font-size: 18px;
+    margin:5px;
+    text-align: justify;
+    border:1px solid black;
+}

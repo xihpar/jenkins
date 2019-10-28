@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Registro</title>
+</head>
+<body>
+        <div id="contenedor">
+                <div id="cabecera">
+                    <h1>TableTop Games</h1>
+                </div>
+                <div id="menu">
+                        <h3>MENU</h3>
+                        <ul id="listamenu">
+                            <li><a href="registro.html">Registro</a></li>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="https://boardgamegeek.com/" target="_black">BGG</a></li>
+                        </ul>  
+                </div>
+                <div id="formulario"> 
+                    <form action="mailto:raphix@gmail.com" id="form1" method="post" onsubmit="return validar()">
+                        <div class="inp">
+                            <p>Nombre</p>
+                            <input type="text" id="nombre" name="name" required size="20">
+                        </div>
+                        <div class="inp">
+                            <p>Apellidos</p>
+                            <input type="text" id="ape" name="apell" required size="30" maxlength="20">
+                        </div>
+                        <div class="inp">
+                            <p>Edad</p>
+                            <input type="number" id="edad" name="age" required size="5" maxlength="2" min="18" max="100">
+                        </div>
+                        <div class="inp">
+                            <p>Número de móvil</p>
+                            <input type="text" id="movil" name="cell" required size="15" maxlength="9">
+                        </div>
+                        <div class="inp">
+                            <p>Correo Electrónico</p>
+                            <input type="text" id="email" name="mail" required size="40" maxlength="30">
+                        </div>
+                        <div class="inp">
+                            <p>Contraseña</p>
+                            <input type="password" id="pass1" name="pas1" required size="40">
+                            <p>Repetir contraseña</p>
+                            <input type="password" id="pass2" name="pas2" required size="40">
+                        </div>
+                        <div class="inp">
+                            <p>Recordar
+                            <input type="checkbox" class="cb" name="cx"></p>
+                            <input type="submit" id="enviar" value="Enviar">
+                            <input type="reset" id="borrar" value="¡Borrar!"> 
+                        </div>
+                    </form>    
+                </div>
+                <footer>
+                        <p>© 2019 TableTop Game  – by Rafa Villar.</p>
+                </footer>
+            </div>       
+</body>
+</html>
